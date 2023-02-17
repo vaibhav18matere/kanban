@@ -1,6 +1,7 @@
 import React from "react";
 import { CiCircleMore } from "react-icons/ci";
 import { Card } from "./Card";
+import AddCard from "./AddCard";
 
 export default function Board() {
   return (
@@ -14,7 +15,7 @@ export default function Board() {
         <div className="mt-2">
           <Card />
           <Card />
-          <Card />
+          <AddCard text="Add new task" placeholder="task title" />
         </div>
       </div>
     </>
