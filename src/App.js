@@ -1,13 +1,12 @@
 import "./App.css";
 import Board from "./components/Board";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
     <>
       <div className="w-full flex flex-col">
-        <div className="p-5 sticky top-0 bg-white shadow-md">
-          <h1 className="text-2xl font-bold">Kanban App</h1>
-        </div>
+        <Navbar />
         <div className="w-full h-full overflow-x-auto pt-5 flex-1">
           <div className="flex h-full w-fit px-10 py-10 gap-28 ">
             <Board />
