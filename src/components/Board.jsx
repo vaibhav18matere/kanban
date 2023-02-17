@@ -1,17 +1,17 @@
 import React from "react";
-import { FiMoreHorizontal } from "react-icons/fi";
+import { CiCircleMore } from "react-icons/ci";
 import { Card } from "./Card";
 
 export default function Board() {
   return (
     <>
       <div className="min-w-fit">
-        <div className="flex">
+        <div className="flex gap-5 items-center justify-end text-xl">
           <p className="font-bold flex align-middle">To Do</p>
-          <FiMoreHorizontal />
-          <span className="text-zinc-700">2</span>
+          <span>2</span>
+          <CiCircleMore className="text-xl cursor-pointer" />
         </div>
-        <div className="board_cards">
+        <div className="mt-2">
           <Card />
           <Card />
           <Card />
