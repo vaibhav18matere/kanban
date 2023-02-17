@@ -7,8 +7,8 @@ import Chip from "./Chip";
 export const Card = () => {
   return (
     <>
-      <div className="w-full max-w-md p-2 mr-1 mb-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
-        <div className="flex items-center justify-between mb-4">
+      <div className="max-w-sm mb-2 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+        <div className="flex items-center justify-between">
           <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">
             Ticket Number
           </h5>
@@ -17,7 +17,7 @@ export const Card = () => {
         </div>
         <div className="flow-root">
           <ul className="divide-y divide-gray-200 dark:divide-gray-700">
-            <li className="py-3 sm:py-4">
+            <li className="py-1 sm:py-4">
               <div className="flex items-center space-x-4">
                 <div className="flex-shrink-0">
                   <img
