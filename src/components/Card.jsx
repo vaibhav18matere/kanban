@@ -1,23 +1,19 @@
 import React from "react";
-import { FiMoreHorizontal } from "react-icons/fi";
+import { CiCircleMore } from "react-icons/ci";
 import { AiOutlineClockCircle } from "react-icons/ai";
 import { FaTasks } from "react-icons/fa";
+import Chip from "./Chip";
 
 export const Card = () => {
   return (
     <>
-      <div class="w-full max-w-md p-2 mr-1 mb-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+      <div className="w-full max-w-md p-2 mr-1 mb-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
         <div className="flex items-center justify-between mb-4">
           <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">
             Ticket Number
           </h5>
-          <a
-            href="#!"
-            className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500 m-4"
-          >
-            Label
-          </a>
-          <FiMoreHorizontal className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500 cursor-pointer" />
+          <Chip />
+          <CiCircleMore className="text-xl font-extrabold text-blue-600 hover:underline dark:text-blue-500 cursor-pointer" />
         </div>
         <div className="flow-root">
           <ul className="divide-y divide-gray-200 dark:divide-gray-700">
